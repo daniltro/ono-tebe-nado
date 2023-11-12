@@ -1,1 +1,311 @@
 /* место для вашего кода */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* header styles */
+
+.header__wrapper {
+  width: 1340px;
+  margin: 0 auto;
+  padding: 94px 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.header__nav {
+  grid-column: 1 / 2;
+}
+
+.header__list {
+  display: flex;
+  gap: 33px;
+}
+
+.header__list-item {
+  list-style: circle;
+}
+
+.border-bottom {
+  border-bottom: #000 solid 1px;
+}
+
+.header__logo {
+  grid-column: 2 / 3;
+  justify-self: center;
+  width: 148px;
+  height: 105px;
+  margin-left: 10px;
+}
+
+.header__logo-image {
+  width: 93%;
+}
+
+.header__address {
+  grid-column: 3 / 4;
+  justify-self: end;
+  align-self: center;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 135%;
+}
+
+.header__phone-number,
+.header__mail {
+  border-bottom: #000 solid 1px;
+}
+
+/* cover styles */
+
+.cover {
+  position: relative;
+  height: 757px;
+  padding: 165px 50px 62px;
+  background: url(../images/cover.jpg) no-repeat center / cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  background: #000;
+}
+
+/* Ниже пример как еще можно реализовать оверлей */
+
+/* .cover::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  background: #000;
+  z-index: 1;
+} */
+
+.cover__title {
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%; /* 115px */
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text:first-of-type {
+  margin-bottom: 13px;
+}
+
+.aligned-text_center {
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0px;
+}
+
+.cover__description {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 78px;
+  padding-top: 129px;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.cover__description-text {
+  word-spacing: 18px;
+}
+.bet-button {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  color: inherit;
+  font: inherit;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+/* lots styles */
+
+.lots {
+  width: 1340px;
+  margin: 0 auto;
+  margin-bottom: 181px;
+  padding-top: 180px;
+}
+
+.lots__heading {
+  margin-bottom: 27px;
+  margin-left: 40px;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 430px;
+  height: 450px;
+  margin-bottom: 30px;
+  padding: 50px 40px;
+}
+.card_type_film {
+  background: url(../images/card-lot-01.jpg) no-repeat center / cover;
+}
+
+.card_type_book {
+  background: url(../images/card-lot-02.jpg) no-repeat center / cover;
+}
+
+.card_type_picture {
+  background: url(../images/card-lot-03.jpg) no-repeat center / cover;
+}
+
+.card-title {
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.card__text {
+  position: relative;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.lots__look-more-link {
+  border-bottom: #000 solid 1px;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* about styles */
+
+.about {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  gap: 25px;
+  width: 1340px;
+  margin: 0 auto;
+  margin-bottom: 180px;
+}
+
+.about__column {
+  display: flex;
+  justify-content: center;
+}
+
+.column__text {
+  flex-direction: column;
+  gap: 100px;
+  padding-top: 100px;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.about__logo-img {
+  width: 148px;
+  height: 114px;
+}
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.about__text-p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* footer styles */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 355px;
+  width: 1340px;
+  margin: 0 auto;
+}
+.header__address {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 135%;
+}
+
+.footer__nav {
+  grid-column: 2 / 3;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__list-item {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 50px;
+  width: 240px;
+}
