@@ -9,12 +9,6 @@ ul {
 
 /* header styles */
 
-.header__wrapper {
-  width: 1340px;
-  margin: 0 auto;
-  padding: 94px 0;
-}
-
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -22,6 +16,12 @@ ul {
   color: #000;
   font-weight: 400;
   font-size: 18px;
+}
+
+.header-wrapper {
+  width: 1340px;
+  margin: 0 auto;
+  padding: 94px 0;
 }
 
 .header__nav {
@@ -35,6 +35,10 @@ ul {
 
 .header__list-item {
   list-style: circle;
+}
+
+.header__list-item:first-child {
+  list-style: none;
 }
 
 .border-bottom {
@@ -113,6 +117,10 @@ ul {
   margin-bottom: 13px;
 }
 
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
 .aligned-text_center {
   margin-bottom: 4px;
   text-align: center;
@@ -120,10 +128,6 @@ ul {
 
 .aligned-text_right {
   text-align: right;
-}
-
-.letter-spacing-extended {
-  letter-spacing: 60px;
 }
 
 .no-letter-spacing {
@@ -141,9 +145,11 @@ ul {
   font-size: 22px;
   text-transform: uppercase;
 }
+
 .cover__description-text {
   word-spacing: 18px;
 }
+
 .bet-button {
   border: 1px solid #fff;
   padding: 12px 32px;
@@ -172,10 +178,12 @@ ul {
   font-size: 40px;
   text-transform: uppercase;
 }
+
 .lots__card-list {
   display: flex;
   gap: 25px;
 }
+
 .card {
   position: relative;
   display: flex;
@@ -186,6 +194,7 @@ ul {
   margin-bottom: 30px;
   padding: 50px 40px;
 }
+
 .card_type_film {
   background: url(../images/card-lot-01.jpg) no-repeat center / cover;
 }
@@ -206,6 +215,7 @@ ul {
   text-decoration: underline;
   text-transform: uppercase;
 }
+
 .card__text {
   position: relative;
   color: #fff;
@@ -215,6 +225,7 @@ ul {
 }
 
 .lots__look-more-link {
+  margin-left: 40px;
   border-bottom: #000 solid 1px;
   color: #000;
   font-weight: 400;
@@ -229,18 +240,12 @@ ul {
   gap: 25px;
   width: 1340px;
   margin: 0 auto;
-  margin-bottom: 180px;
+  margin-bottom: 185px;
 }
 
 .about__column {
   display: flex;
   justify-content: center;
-}
-
-.column__text {
-  flex-direction: column;
-  gap: 100px;
-  padding-top: 100px;
 }
 
 .about__logo {
@@ -257,6 +262,13 @@ ul {
   width: 148px;
   height: 114px;
 }
+
+.about__column-text {
+  flex-direction: column;
+  gap: 100px;
+  padding-top: 100px;
+}
+
 .about__title {
   font-weight: 700;
   font-size: 40px;
@@ -281,8 +293,9 @@ ul {
   gap: 355px;
   width: 1340px;
   margin: 0 auto;
+  padding-bottom: 90px;
 }
-.header__address {
+.footer__address {
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
