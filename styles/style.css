@@ -19,9 +19,7 @@ ul {
 }
 
 .header-wrapper {
-  width: 1340px;
-  margin: 0 auto;
-  padding: 94px 0;
+  padding: 94px 49px 92px 51px;
 }
 
 .header__nav {
@@ -32,6 +30,10 @@ ul {
   display: flex;
   gap: 33px;
 }
+
+/* .header__list-link {
+  pointer-events: none;
+} */
 
 .header__list-item {
   list-style: circle;
@@ -76,8 +78,7 @@ ul {
 
 .cover {
   position: relative;
-  height: 757px;
-  padding: 165px 50px 62px;
+  padding: 165px 50px 52px;
   background: url(../images/cover.jpg) no-repeat center / cover;
 }
 
@@ -87,17 +88,6 @@ ul {
   opacity: 0.6;
   background: #000;
 }
-
-/* Ниже пример как еще можно реализовать оверлей */
-
-/* .cover::before{
-  content: '';
-  position: absolute;
-  inset: 0;
-  opacity: 0.6;
-  background: #000;
-  z-index: 1;
-} */
 
 .cover__title {
   position: relative;
@@ -164,10 +154,7 @@ ul {
 /* lots styles */
 
 .lots {
-  max-width: 1340px;
-  margin: 0 auto;
-  margin-bottom: 181px;
-  padding-top: 180px;
+  padding: 180px 50px 150px;
 }
 
 .lots__heading {
@@ -185,31 +172,32 @@ ul {
   gap: 25px;
 }
 
+.lots__card-list-item {
+  flex-grow: 1;
+  width: 430px;
+  height: 450px;
+}
+
 .card {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 430px;
-  height: 450px;
-  margin-bottom: 30px;
+  height: 100%;
   padding: 50px 40px;
-}
-
-.lots__card-list-item:last-child {
-  flex-grow: 1;
+  background: no-repeat center / cover;
 }
 
 .card_type_film {
-  background: url(../images/card-lot-01.jpg) no-repeat center / cover;
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background: url(../images/card-lot-02.jpg) no-repeat center / cover;
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background: url(../images/card-lot-03.jpg) no-repeat center / cover;
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card-title {
@@ -230,7 +218,8 @@ ul {
 }
 
 .lots__look-more-link {
-  margin-left: 40px;
+  display: inline-block;
+  margin: 30px 0 0 40px;
   border-bottom: #000 solid 1px;
   color: #000;
   font-weight: 400;
@@ -243,9 +232,7 @@ ul {
   display: grid;
   grid-template-columns: 430px 1fr;
   gap: 25px;
-  width: 1340px;
-  margin: 0 auto;
-  margin-bottom: 185px;
+  padding: 34px 50px 182px;
 }
 
 .about__column {
@@ -295,11 +282,11 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 355px;
-  width: 1340px;
-  margin: 0 auto;
-  padding-bottom: 90px;
+  gap: 358px;
+  padding: 0 50px 90px;
+  white-space: nowrap;
 }
+
 .footer__address {
   font-weight: 400;
   font-size: 18px;
@@ -325,5 +312,4 @@ ul {
 .footer__social-list {
   display: flex;
   gap: 50px;
-  width: 240px;
 }
