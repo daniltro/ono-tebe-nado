@@ -313,3 +313,7 @@ ul {
   display: flex;
   gap: 50px;
 }
+
+.footer__social-icon {
+  width: 48px;
+}
